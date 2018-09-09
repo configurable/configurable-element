@@ -1,29 +1,39 @@
 <template>
   <div>
-    wangmeng
-    <p>{{a}}</p>
-    <p>{{b}}</p>
+    <el-input :type='submitData.data1.type' v-model="submitData.data1.propName" ></el-input>
+    <el-form v-model="submitData">
+      <el-form-item :label="submitData.data1.label" prop="data1">
+
+      </el-form-item>
+      <el-form-item label="">
+        
+      </el-form-item>
+      
+    </el-form>
   </div>
 </template>
 
 <script>
+import config from "./data";
+
 export default {
   data() {
     return {
-      a: 1
-    }
+      a: 1,
+      submitData: config.submitData
+    };
   },
   mounted() {
     setTimeout(() => {
-      this.a++
-    }, 1000)
+      this.a++;
+    }, 1000);
   },
   computed: {
     b() {
-      let b = this.a
-      console.log(b)
+      let b = this.a;
+      console.log(b);
 
-      return b
+      return b;
     }
   }
 };
