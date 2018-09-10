@@ -1,8 +1,8 @@
 <template>
   <div>
-    <el-input :type='submitData.data1.type' v-model="submitData.data1.propName" ></el-input>
+    <el-input :type='submitDataRules.data1.type' v-model="submitData[submitDataRules.data1.propName]" ></el-input>
     <el-form v-model="submitData">
-      <el-form-item :label="submitData.data1.label" prop="data1">
+      <el-form-item :label="submitDataRules.data1.label" prop="data1">
 
       </el-form-item>
       <el-form-item label="">
@@ -20,7 +20,8 @@ export default {
   data() {
     return {
       a: 1,
-      submitData: config.submitData
+      submitData: config.submitData,
+      submitDataRules: config.submitDataRules
     };
   },
   mounted() {

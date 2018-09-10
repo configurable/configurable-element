@@ -14,6 +14,9 @@ let config = {
   //   style: {}
   // },
   submitData: {
+    data1: null
+  },
+  submitDataRules: {
     data1: {
       alias: 'data1_alias',
       propName: 'data1',

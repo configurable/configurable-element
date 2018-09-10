@@ -25,6 +25,12 @@ export default new Router({
       name: 'table1',
       component: Table1,
       meta: {}
-    }    
+    },
+    {
+      path: '/table2',
+      name: 'table2',
+      component: Table1,
+      meta: {}
+    }     
   ]
 })

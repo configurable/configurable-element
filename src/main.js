@@ -4,10 +4,10 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 
-if (process.env.NODE_ENV === 'development') {
-  var devtools = require('@vue/devtools')
-  devtools.connect( /* host, port */ )
-}
+// if (process.env.NODE_ENV === 'development') {
+//   var devtools = require('@vue/devtools')
+//   devtools.connect( /* host */null , 8098)
+// }
 
 Vue.config.productionTip = false
 
